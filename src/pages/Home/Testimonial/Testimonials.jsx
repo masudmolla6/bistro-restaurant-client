@@ -13,7 +13,7 @@ const Testimonial = () => {
   console.log(reviews);
 
   useEffect(() => {
-    fetch("http://localhost:5000/reviews")
+    fetch("https://bistro-boss-server-alpha-nine.vercel.app/reviews")
       .then((res) => res.json())
       .then((data) => {
         setReviews(data);
